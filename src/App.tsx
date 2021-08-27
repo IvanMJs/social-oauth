@@ -12,13 +12,11 @@ import {
   Container,
   HTMLChakraProps,
   chakra,
-  Icon,
 } from "@chakra-ui/react";
 import { FaGithub } from "react-icons/fa";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { HTMLMotionProps, motion } from "framer-motion";
-import { VscSymbolColor } from "react-icons/vsc";
-import { FcPicture, FcFolder, FcDatabase, FcAcceptDatabase } from "react-icons/fc";
+
 type UserMetadata = {
   avatar_url: string;
   full_name: string;
@@ -103,7 +101,6 @@ export default function App() {
               Logout
             </Button>
             <Button
-              leftIcon={<FcPicture />}
               as="button"
               p={4}
               color="white"
@@ -125,20 +122,17 @@ export default function App() {
     <>
       <Flex alignItems="center" justify="center" margin="auto">
         <Text textAlign="center" fontSize="5xl" mb={6} mt={10}>
-          Connected with Supabase <Icon as={FcAcceptDatabase}/>
+          Connected with Supabase
         </Text>
       </Flex>
       <Flex alignItems="center" justify="center" margin="auto">
         <Text textAlign="center">
           React-Typescript / connected with{" "}
           <Link color="blue.200" href="https://supabase.io/" isExternal>
-            Supabase 
-            <Icon as={FcDatabase} />
+            Supabase
             <ExternalLinkIcon mx="2px" />
           </Link>
-          <Text>
-            and use Chakra Ui <Icon as={VscSymbolColor} />
-          </Text>
+          <Text>and use Chakra Ui</Text>
         </Text>
       </Flex>
       <Flex height="50vh" alignItems="center" justify="center" margin="auto">
@@ -161,7 +155,6 @@ export default function App() {
             Login with Github
           </Button>
           <Button
-            leftIcon={<FcPicture />}
             as="button"
             p={4}
             color="white"
@@ -209,13 +202,13 @@ export default function App() {
             href="https://github.com/IvanMJs/social-oauth"
             isExternal
           >
-            <Icon mt={-1} as={FcFolder} /> Repo
+            Repo
           </Link>
         </Text>
         <Text>
           I made one just connected to{" "}
           <Link color="blue.200" href="https://imei.vercel.app/" isExternal>
-            Firebase <Icon as={FcDatabase} />
+            Firebase
             <ExternalLinkIcon mx="2px" />
           </Link>
         </Text>
